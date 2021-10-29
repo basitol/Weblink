@@ -101,11 +101,6 @@
   }
 }
 
-input:focus + label {
-  opacity: 1;
-  transform: scale(0.75) translateY(-70%) translateX(-3px);
-}
-
 .inp {
   height: 20px;
   margin: 0;
@@ -118,7 +113,6 @@ input:focus + label {
 }
 
 .naira {
-  /* border: 2px solid green; */
   position: absolute;
   top: 18px;
   left: 10px;
@@ -134,6 +128,7 @@ input:focus + label {
   display: flex;
   border-radius: 5px;
   border: 1px solid #b3a9c5;
+  z-index: 1;
 }
 
 .amount-info input {
@@ -144,6 +139,7 @@ input:focus + label {
   outline: none;
   color: #4c4079;
   line-height: 20px;
+  font-size: 19px;
   background-color: #f9f9ff;
 }
 
@@ -164,22 +160,9 @@ input:valid ~ .amount {
   font-size: 0.5rem;
   color: #4c4079;
   opacity: 1;
-  transform: translate(1.9rem, -2.5rem) scale(0.875);
-}
-
-// input:focus ~ .ussd-info,
-// input:valid ~ .ussd-info {
-//   opacity: 1;
-//   transform: scale(0.75) translateY(-70%) translateX(-14px);
-// }
-/* .inp input:valid ~ .amount {
-  border: 1px solid red;
-  opacity: 1;
-  transform: translate(1.8rem, -2.5rem) scale(0.875);
-} */
-
-input[type="text"],
-input[type="number"] {
-  height: 50px;
-  transition: 0.2s ease-in;
+  position: absolute;
+  top: 0px;
+  z-index: 10000;
+  background: #f9f9ff;
+  transform: scale(0.9rem);
 }
