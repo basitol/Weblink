@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration-style: none;
+  outline: none;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+  margin-bottom: 100px;
+  background: #ffffff;
+  font-family: "DM Sans", sans-serif;
+}
+
+//flexbox styles
+
+.flex {
+  display: flex;
+
+  &-c {
+    flex-direction: column;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-jc-fe {
+    align-items: flex-end;
+  }
+
+  &-f-1 {
+    flex: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+
+  &--pall {
+    padding-top: 0.6rem;
+    padding-right: 2.25rem;
+    // padding-bottom: 1rem;
+    padding-left: 4.875rem;
+  }
+
+  &--py {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+  }
+
+  &--px {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  --pt {
+    padding-top: 4.375rem;
+  }
+
+  &--pr {
+    padding-right: 1.5rem;
+  }
+
+  &--pb {
+    padding-bottom: 4.375rem;
+  }
+}
+
+.hr {
+  border-style: none;
+  height: 1px;
+  background-color: #e3ecf6;
+}
