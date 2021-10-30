@@ -8,8 +8,9 @@
     }
   }
 
-  .pay-for-me {
-    // visibility: hidden;
+  .pay-for-me,
+  .paid {
+    padding-left: 40px;
   }
 
   &__text {

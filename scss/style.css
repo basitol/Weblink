@@ -163,6 +163,11 @@ a {
   width: 100%;
 }
 
+.hero .pay-for-me,
+.hero .paid {
+  padding-left: 40px;
+}
+
 .hero__text {
   width: 360px;
   margin-top: 250px;
